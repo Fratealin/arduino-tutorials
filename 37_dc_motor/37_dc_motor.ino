@@ -24,15 +24,16 @@ keepRunning();
 }
 
 void setDirection(){
-  digitalWrite(dir1, LOW);
-  digitalWrite(dir2, HIGH); // have to be opposite
+  digitalWrite(dir1, HIGH);
+  digitalWrite(dir2, LOW); // have to be opposite
 }
+
 void kickStart(){
   analogWrite(speedPin, mSpeed);
 delay(75); // kick start
 }
 
 void keepRunning(){
-  analogWrite(speedPin,100);
+  analogWrite(speedPin,200);
 delay(5000);
 }

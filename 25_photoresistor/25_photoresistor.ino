@@ -17,7 +17,6 @@ pinMode(green, OUTPUT);
 void loop() {
   // put your main code here, to run repeatedly:
 lightVal=analogRead(lightPen);
-Serial.println(d);
 d=(15./550.)*lightVal-(200.*15./550.)+1.;
 analogWrite(buzzPin, 50);
 delayMicroseconds(d);
@@ -31,5 +30,6 @@ if (lightVal>500){
 else {
   digitalWrite(blue, LOW);
   analogWrite(green, 255);
-}  
+}
+Serial.println(lightVal);  
 }
