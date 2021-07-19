@@ -1,5 +1,5 @@
-int triggerPin = 12;
-int echoPin=11;
+int triggerPin = 2;
+int echoPin=3;
 int pingTravelTime;
 int delayT1=10;
 int delayT2=1000;
